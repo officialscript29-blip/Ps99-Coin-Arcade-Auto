@@ -1,1 +1,83 @@
-loadstring(game:HttpGet("https://cdn.sourceb.in/bins/qgMpWeyGrA/0", true))()
+getgenv().ZWarePetSimulator99Settings = {
+    Optimization = {
+        Enable = true,
+    },
+
+    DisableEggOpenAnimations = true,
+
+    CoinArcade = {
+        Enable = true,
+        AutoEnter = true,
+
+        -- Available modes: "Blatant" or "Legit".
+        Mode = "Blatant",
+
+        -- An empty table automatically selects every available cabinet.
+        Cabinets = {},
+
+        AutoAssignBestUnits = true,
+        AutoPurchaseCabinets = true,
+        AutoCollectCoins = true,
+        AutoJoinBossChest = true,
+
+        AutoBuyUpgrades = true,
+        PurchaseAllUpgrades = true,
+
+        -- Used when PurchaseAllUpgrades is false.
+        -- Enter CoinArcade upgrade identifiers from the live Directory.
+        Upgrades = {},
+
+        AutoUnlockMerchants = true,
+        AutoOpenEggs = true,
+
+        -- Available options include "Best Affordable",
+        -- "Merchant 1", "Merchant 2", and so on.
+        EggMerchant = "Best Affordable",
+
+        Minigames = {
+            Flappy = true,
+            Snake = true,
+            ColorBlocks = true,
+            Invaders = true,
+
+            BlockDrop = {
+                Enable = true,
+
+                -- Available strategies: "Balanced", "Tetris", or "Survival".
+                Strategy = "Balanced",
+
+                -- Valid range: 20–240.
+                SearchWidth = 80,
+
+                -- Valid range: 0.2–1 second.
+                PieceDelay = 0.2,
+            },
+        },
+    },
+
+    NewPetsTracker = {
+        Enable = false,
+        WebhookURL = "",
+
+        PetTypes = {
+            "Exclusive",
+            "Huge",
+            "Titanic",
+            "Gargantuan",
+        },
+    },
+
+    StatGUI = {
+        Enable = true,
+
+        Items = {
+            {
+                Class = "Currency",
+                Item = "Diamonds",
+            },
+        },
+    },
+}
+
+script_key = "keyHere"
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/4c945482a7b059e9f5c434d70c1153fe.lua"))()
